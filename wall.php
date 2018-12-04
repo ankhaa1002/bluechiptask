@@ -65,6 +65,7 @@
 				echo "<div class=\"media text-muted pt-3\">
 			          <p class=\"media-body pb-3 mb-0 small lh-125 border-bottom border-gray\">
 			            <strong class=\"text-gray-dark\">@". $row["name"] ."</strong>
+                  <span class=\"text-gray-dark\">". $row["email"] ."</span>
 			            <span class=\"text-gray-dark\">". $row["posteddate"] ."</span> 
 			            <a href=\"message.php?message=".$row["id"]."\" style=\"margin-left: 15px;\"  class=\"btn btn-danger btn-sm\">Delete</a>
 			            <br/><br/>
