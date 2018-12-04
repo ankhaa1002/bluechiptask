@@ -27,7 +27,7 @@
       <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="wall.php">Dashboard</a>
+            <a class="nav-link" href="index.php">Dashboard</a>
           </li>
         </ul>
       </div>
@@ -84,7 +84,7 @@
 	  			if($paginations > 0){
 	  				echo "<strong>Paginations</strong>  ";
 	  				for($i = 1; $i <= $paginations; $i++){
-	  					$url = "wall.php?page=".$i."";
+	  					$url = "index.php?page=".$i."";
 
 						echo "<a style=\"font-weight: bold; margin-right: 5px;\" href=\"".$url."\">".$i."</a>";
 	  				}

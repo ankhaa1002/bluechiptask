@@ -49,14 +49,14 @@
 				VALUES ('".$body."', '".$name."','".$email."', '".$posteddate."')";
 
 			if ($conn->query($sql) === TRUE) {
-			    header("Location: wall.php?success=1");
+			    header("Location: index.php?success=1");
 				exit();
 			} else {
 			    echo "Error: " . $sql . "<br>" . $conn->error;
 			}
 		}
 	} catch(\Exception $e){
-		header("Location: wall.php?danger=1");
+		header("Location: index.php?danger=1");
 		exit();
 	}
 	
@@ -67,14 +67,14 @@
 			$sql = "DELETE FROM message WHERE id = ".$_GET["message"]."";
 
 			if ($conn->query($sql) === TRUE) {
-			    header("Location: wall.php?deleteSuccess=1");
+			    header("Location: index.php?deleteSuccess=1");
 				exit();
 			} else {
 			    echo "Error: " . $sql . "<br>" . $conn->error;
 			}
 		}
 	} catch(\Exception $e){
-		header("Location: wall.php?deleteDanger=1");
+		header("Location: index.php?deleteDanger=1");
 		exit();
 	}
 ?>
